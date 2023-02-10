@@ -8,7 +8,7 @@
 <script>
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
-import BoredApi from '@/api/BoredApi.vue'
+import ReqresIn from '@/api/ReqresIn.vue'
 
 export default {
   name: 'HomeView',
@@ -16,7 +16,7 @@ export default {
     HelloWorld
   },
   mounted () {
-    BoredApi.getActivity().then((res) => {
+    ReqresIn.getUsers().then((res) => {
       console.log(res)
     })
   }

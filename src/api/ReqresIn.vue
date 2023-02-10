@@ -1,12 +1,12 @@
 <script>
 import http from '@/utils/http.js'
 
-function getActivity () {
-  return http.get('/api/activity/')
+function getUsers () {
+  return http.get('/api/users/')
 }
 
 export default {
-  getActivity
+  getUsers
 }
 
 </script>
