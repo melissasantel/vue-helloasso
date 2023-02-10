@@ -8,11 +8,17 @@
 <script>
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
+import BoredApi from '@/api/BoredApi.vue'
 
 export default {
   name: 'HomeView',
   components: {
     HelloWorld
+  },
+  mounted () {
+    BoredApi.getActivity().then((res) => {
+      console.log(res)
+    })
   }
 }
 </script>
