@@ -1,12 +1,12 @@
 <script>
 import http from '@/utils/http.js'
 
-function getUsers () {
-  return http.get('/api/users/')
+function getUsersFromPage (page = 1) {
+  return http.get(`/api/users?page=${page}`)
 }
 
 export default {
-  getUsers
+  getUsersFromPage
 }
 
 </script>
